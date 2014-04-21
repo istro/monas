@@ -17,6 +17,9 @@ h2, h3, h4 {
   margin: -125px 0 0 -150px;
   position: absolute;
   text-align: center;
+  input, small {
+    margin-bottom: 0;
+  }
   #share_recipe {
     font-style: italic;
     text-decoration: underline;
@@ -26,6 +29,10 @@ h2, h3, h4 {
   #recipe {
     display: none;
   }
+}
+
+.pb15 {
+  padding-bottom: 15px;
 }
 
 .thank-you {
