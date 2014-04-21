@@ -1,0 +1,38 @@
+body {
+  padding: 50px;
+  background-image: image-url('background/4.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+h2, h3, h4 {
+  text-align: center;
+  color: #f1f1f1;
+}
+
+.sign-up-form, .thank-you {
+  color: #f1f1f1;
+  width: 300px;
+  height: 250px;
+  margin: -125px 0 0 -150px;
+  position: absolute;
+  text-align: center;
+  #share_recipe {
+    font-style: italic;
+    text-decoration: underline;
+    cursor: pointer;
+    margin-bottom: 15px;
+  }
+  #recipe {
+    display: none;
+  }
+}
+
+.thank-you {
+  display: none;
+}
+
+.center {
+  left: 50%;
+  top: 50%;
+}
