@@ -8,6 +8,7 @@ class SubscribersController < ApplicationController
       f.json {
         sub = Subscriber.new sub_params
         if sub.save
+          MonasMailer.confirmation(sub).deliver
           render json: sub
         else
           render json: { errors: sub.errors }, status: :unprocessable_entity
