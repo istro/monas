@@ -8,8 +8,8 @@ $(document).on('ready page:load', function () {
   });
 
   $('#new_subscriber').on('ajax:success', function(e, data, status, xhr) {
-    $('.sign-up-form').hide();
-    $('.thank-you').show();
+    $('.sign-up-form').fadeOut();
+    $('.thank-you').fadeIn();
   });
 
 });

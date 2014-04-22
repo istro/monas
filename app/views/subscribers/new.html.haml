@@ -1,7 +1,9 @@
-%h2 Monas Burgers and Shakes
-%h3 Coming soon.
+.heading
+  %h1 Monas Burgers and Shakes
+  %h2 Coming soon.
 
 .sign-up-form.center
+  %p Sign up for updates.
   = form_for @sub, remote: true, html: {'data-abide' => 'data-abide'} do |f|
     .pb15
       = f.text_field :name, placeholder: 'Name'
