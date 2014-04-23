@@ -1,7 +1,9 @@
 %h3 Hey, Mona's website got a new subscriber!
 %p Their name is #{@sub.name}, and email is #{@sub.email}.
--if @sub.favorite_recipe
+-if @sub.favorite_recipe.length != 0
   %p Their favorite dish is #{@sub.favorite_recipe}
+-else
+  %p They'll eat anything. No favorite dish.
 %p Rock on!
 %p Faithfully yours,
 %br Superman
