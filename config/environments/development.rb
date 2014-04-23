@@ -38,4 +38,7 @@ Monas::Application.configure do
     :domain => 'monas.herokuapp.com', # your domain to identify your server when connecting
   }
 
+  # Devise.
+  config.action_mailer.default_url_options = { host: 'localhost:3000' }
+
 end

@@ -88,4 +88,7 @@ Monas::Application.configure do
     :authentication => 'login', # Mandrill supports 'plain' or 'login'
     :domain => 'monas.herokuapp.com', # your domain to identify your server when connecting
   }
+
+  # Devise.
+  config.action_mailer.default_url_options = { host: 'monasburgers.com' }
 end
