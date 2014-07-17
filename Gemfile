@@ -2,7 +2,6 @@ source 'https://rubygems.org'
 ruby '2.0.0'
 
 gem 'rails', '4.0.4'
-gem 'turbolinks'
 
 # assets
 gem 'jquery-rails'
@@ -26,6 +25,7 @@ group :development, :test do
   gem 'better_errors'
   gem 'binding_of_caller'
   gem 'jazz_hands'
+  gem 'quiet_assets'
 end
 
 # heroku ?
