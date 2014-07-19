@@ -21,6 +21,10 @@ RailsAdmin.config do |config|
 
   ### More at https://github.com/sferik/rails_admin/wiki/Base-configuration
 
+  # exclude admins
+  config.excluded_models << "Admin"
+
+
   config.actions do
     dashboard                     # mandatory
     index                         # mandatory
