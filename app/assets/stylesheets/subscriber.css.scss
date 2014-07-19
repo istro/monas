@@ -1,14 +1,19 @@
 /* This is ugly as hell, but whatever, we'll throw it away in a few months */
 
 body {
+  top: -20px;
+}
+
+.subscribe {
   background-image: image-url('background/4.jpg');
   background-size: cover;
   background-position: center;
-}
-
-h1, h2, h3, h4 {
-  text-align: center;
-  color: #f1f1f1;
+  height: 100%;
+  padding: 20px;
+  h1, h2, h3, h4 {
+    text-align: center;
+    color: #f1f1f1;
+  }
 }
 
 .sign-up-form, .thank-you {

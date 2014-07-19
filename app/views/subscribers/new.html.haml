@@ -1,20 +1,21 @@
-.heading
-  %h1 Monas Burgers and Shakes
-  %h2 Coming soon.
+.subscribe
+  .heading
+    %h1 Monas Burgers and Shakes
+    %h2 Coming soon.
 
-.sign-up-form.center
-  %p Sign up for updates.
-  = form_for @sub, remote: true, html: {'data-abide' => 'data-abide'} do |f|
-    .pb15
-      = f.text_field :name, placeholder: 'Name'
-    .pb15
-      = f.email_field :email, required: :required, placeholder: 'email address'
-      %small.error Valid email is required if you want us to get in touch!
-    .pb15
-      #share_recipe Got a recipe request?
-      = f.text_area :favorite_recipe, placeholder: 'What\'s your favorite recipe?', id: 'recipe'
-    = f.submit 'Keep me posted!', class: 'button radius success'
+  .sign-up-form.center
+    %p Sign up for updates.
+    = form_for @sub, remote: true, html: {'data-abide' => 'data-abide'} do |f|
+      .pb15
+        = f.text_field :name, placeholder: 'Name'
+      .pb15
+        = f.email_field :email, required: :required, placeholder: 'email address'
+        %small.error Valid email is required if you want us to get in touch!
+      .pb15
+        #share_recipe Got a recipe request?
+        = f.text_area :favorite_recipe, placeholder: 'What\'s your favorite recipe?', id: 'recipe'
+      = f.submit 'Keep me posted!', class: 'button radius success'
 
-.thank-you.center
-  %h3 Thank you.
-  %h4 We'll be in touch!
+  .thank-you.center
+    %h3 Thank you.
+    %h4 We'll be in touch!
