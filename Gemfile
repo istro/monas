@@ -5,7 +5,6 @@ gem 'rails', '4.0.4'
 
 # admin
 gem 'rails_admin', '~> 0.6.2'
-gem 'devise'
 
 # assets
 gem 'jquery-rails'
