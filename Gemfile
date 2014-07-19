@@ -3,6 +3,9 @@ ruby '2.0.0'
 
 gem 'rails', '4.0.4'
 
+# admin
+gem 'rails_admin', '~> 0.6.2'
+
 # assets
 gem 'jquery-rails'
 gem 'uglifier', '>= 1.3.0'

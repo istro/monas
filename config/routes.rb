@@ -1,4 +1,5 @@
 Monas::Application.routes.draw do
+  mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   root "subscribers#new"
 
   resources :subscribers
