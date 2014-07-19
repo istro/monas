@@ -1,10 +1,10 @@
 Monas::Application.routes.draw do
 
   # registrations enabled
-  devise_for :admins
+  # devise_for :admins
 
   # registrations disabled
-  # devise_for :admins, controllers: { registrations: "registrations" }
+  devise_for :admins, controllers: { registrations: "registrations" }
 
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   root "subscribers#new"
